@@ -1,12 +1,17 @@
 <template>
   <div id="sidebar">
-      Filters
+      <filters/>
+	  <button>Add movie</button>
   </div>
 </template>
 
 <script>
-export default {
+import Filters from './Filters'
 
+export default {
+	components: {
+		Filters
+	}
 }
 </script>
 
