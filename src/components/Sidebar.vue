@@ -11,6 +11,21 @@ import Filters from './Filters'
 export default {
 	components: {
 		Filters
+	},
+	data(){
+		return{
+			forms:{
+				name:'',
+				year:'',
+				rating:'',
+				genre:'',
+				budget:'',
+				boxOffice:'',
+				poster;'',
+				actors: [{name:''}],
+				storyline:''
+			}
+		}
 	}
 }
 </script>

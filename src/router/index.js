@@ -6,6 +6,12 @@ const routes = [
     path: '/',
     name: 'Home',
     component: Home
+  },
+  {
+    path: '/movie-preview/:id',
+    name: 'moviePreview',
+    component: () => import('../views/MoviePreview'),
+    props: true
   }
 ]
 
