@@ -1,6 +1,5 @@
 <template>
   <div id="movie-container">
-    Movie list
     <movie v-for="movie in movies" :key="movie.id" :movie="movie" />
   </div>
 </template>
@@ -21,9 +20,9 @@ export default {
        return this.$store.getters.getMovies;
      },
   },
-  // created() {
-  //   this.movies = this.$store.getters.getMovies;
-  // },
+   created() {
+     this.movies = this.$store.dispatch("fetchMovies");
+  },
 };
 </script>
 
